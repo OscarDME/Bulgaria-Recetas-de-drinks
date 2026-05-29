@@ -1,211 +1,211 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// COPY.JS — Fuente única de TODO el texto visible de la landing.
-// Doc §7: cero texto hardcodeado en componentes. Si está en pantalla, está aquí.
+// COPY.JS — Източник на ЦЕЛИЯ видим текст за лендинг страницата.
+// Doc §7: Никакъв хардкоднат текст в компонентите. Ако е на екрана, е тук.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const copy = {
-  // ── SEO / METADATA (Layout.astro lo lee) ──────────────────────────────────
+  // ── SEO / METADATA (Layout.astro го чете) ──────────────────────────────────
   metadata: {
-    lang: 'pt-BR',
-    title: '150 receitas de drinks gourmet',
+    lang: 'bg',
+    title: '150 рецепти за премиум коктейли у дома',
     description:
-      'Receitas de drinks prontas para vender — ingredientes simples, produção rápida e margem de lucro alta. Comece a faturar até R$3.000/mês com bônus exclusivos.',
+      'Рецепти за коктейли, готови за парти — лесни съставки, бързо приготвяне. Впечатли приятелите си, спести пари от скъпи барове и стани звездата на вечерта. Включва ексклузивни бонуси.',
     canonical: 'https://150receitascopao.netlify.app',
     ogImage: '/og-cover.jpg',
     ogType: 'website',
-    siteName: 'MUNDO DOS DRINKS',
+    siteName: 'СВЕТЪТ НА КОКТЕЙЛИТЕ',
   },
 
-  // ── 1. TIMER STICKY ARRIBA ────────────────────────────────────────────────
+  // ── 1. TIMER STICKY АНТЕТКА ────────────────────────────────────────────────
   timerBar: {
     icon: '⏰',
-    label: 'Promoção encerra em:',
+    label: 'Офертата изтича след:',
     initialMinutes: 9,
     initialSeconds: 57,
   },
 
   // ── 2. HERO ───────────────────────────────────────────────────────────────
   hero: {
-    tag: '🍋 Oferta Exclusiva',
-    titleHighlight: '150 Receitas de copão Gourmet',
-    titleConnector: 'para Vender',
-    titleHighlightGreen: 'R$3.000',
-    titleEnd: 'Começando do Zero',
-    deliveryLabel: 'Você recebe imediatamente no',
+    tag: '🍋 Ексклузивна Оферта',
+    titleHighlight: '150 Рецепти за Страхотни Коктейли',
+    titleConnector: 'за Твоето',
+    titleHighlightGreen: 'Удоволствие',
+    titleEnd: 'Дори и да си начинаещ',
+    deliveryLabel: 'Получаваш достъп веднага по',
     deliveryChannels: [
       { label: 'WhatsApp', kind: 'whatsapp' },
       { label: 'Email', kind: 'email' },
     ],
-    videoAlt: 'Apresentação do kit 150 receitas de drinks gourmet',
-    ctaLabel: '✅ QUERO GARANTIR MINHAS RECEITAS AGORA',
-    ctaSub: '🔒 Compra 100% segura • Acesso imediato',
+    videoAlt: 'Представяне на комплекта 150 рецепти за домашни коктейли',
+    ctaLabel: '✅ ИСКАМ ДА ВЗЕМА МОИТЕ РЕЦЕПТИ СЕГА',
+    ctaSub: '🔒 100% сигурна покупка • Незабавен достъп',
   },
 
-  // ── 3. BENEFÍCIOS ─────────────────────────────────────────────────────────
+  // ── 3. ПОЛЗИ ─────────────────────────────────────────────────────────
   benefits: {
     intro:
-      'Receitas de drinks prontas para vender — ingredientes simples, produção rápida,',
-    introStrong: 'alto valor percebido e margem de lucro que vai te surpreender!',
+      'Рецепти, създадени за максимално удоволствие — лесни съставки, бързо приготвяне,',
+    introStrong: 'невероятен вкус и визия, с които ще впечатлиш всеки гост!',
     items: [
-      'Qualquer pessoa consegue fazer',
-      'Sem cozinha profissional ou equipamentos caros',
-      'Receitas prontas, testadas e com custo baixo',
-      'Perfeito para vender no WhatsApp, rua ou delivery',
+      'Да приготвяш всеки коктейл без предишен опит',
+      'Да правиш магия без професионални уреди или скъпа кухня',
+      'Да се наслаждаваш на тествани рецепти с достъпни съставки',
+      'Да бъдеш звездата на всяко домашно парти, на вилата или събиране с приятели',
     ],
-    ctaLabel: '🍹 QUERO GARANTIR MINHAS RECEITAS AGORA',
+    ctaLabel: '🍹 ИСКАМ ДА ВЗЕМА МОИТЕ РЕЦЕПТИ СЕГА',
   },
 
-  // ── 4. CARRUSEL DE RECETAS ────────────────────────────────────────────────
+  // ── 4. КАРУСЕЛ С РЕЦЕПТИ ────────────────────────────────────────────────
   carousel: {
-    title: '🍹 Algumas das receitas que você irá',
-    titleHighlight: 'aprender e lucrar!',
+    title: '🍹 Част от рецептите, на които ще се',
+    titleHighlight: 'наслаждаваш с приятели!',
     slides: [
-      { caption: 'Copão Beijo Doce', alt: 'Drink Copão Beijo Doce' },
+      { caption: 'Сладка целувка', alt: 'Коктейл Сладка целувка' },
       {
-        caption: 'Espanhola de Vinho c/ Maracujá',
-        alt: 'Drink Espanhola de Vinho com Maracujá',
+        caption: 'Испанско вино с маракуя',
+        alt: 'Коктейл Испанско вино с маракуя',
       },
-      { caption: 'MaracuBeats Cremosa', alt: 'Drink MaracuBeats Cremosa' },
-      { caption: 'Batida de Bala Halls', alt: 'Drink Batida de Bala Halls' },
-      { caption: 'Drink do Verão', alt: 'Drink do Verão' },
+      { caption: 'Кремообразно МаракуБийтс', alt: 'Коктейл Кремообразно МаракуБийтс' },
+      { caption: 'Коктейл с бонбони Холс', alt: 'Коктейл с бонбони Холс' },
+      { caption: 'Летен бриз', alt: 'Коктейл Летен бриз' },
       {
-        caption: 'Caipirinha de Maracujá c/ Café',
-        alt: 'Drink Caipirinha de Maracujá com Café',
+        caption: 'Кайпириня с маракуя и кафе',
+        alt: 'Коктейл Кайпириня с маракуя и кафе',
       },
     ],
-    prevLabel: 'Slide anterior',
-    nextLabel: 'Próximo slide',
-    dotLabel: 'Ir para o slide',
+    prevLabel: 'Предишен слайд',
+    nextLabel: 'Следващ слайд',
+    dotLabel: 'Към слайд',
   },
 
-  // ── 5. BÔNUS ──────────────────────────────────────────────────────────────
+  // ── 5. БОНУСИ ──────────────────────────────────────────────────────────────
   bonuses: {
-    title: '🎁 E ainda tem',
-    titleHighlight: 'BÔNUS!',
+    title: '🎁 И разбира се, имаш',
+    titleHighlight: 'БОНУСИ!',
     items: [
       {
-        tag: 'Bônus 1',
-        title: '50 Receitas Alcoólicas de Batidas na Garrafa',
-        description: 'Receitas prontas para vender, sem os bônus exclusivos.',
-        alt: '50 Receitas Alcoólicas de Batidas na Garrafa',
+        tag: 'Бонус 1',
+        title: '50 Рецепти за алкохолни шотове и пуншове',
+        description: 'Перфектните парти напитки, които да приготвиш бързо и да споделиш с компанията.',
+        alt: '50 Рецепти за алкохолни шотове и пуншове',
       },
       {
-        tag: 'Bônus 2',
-        title: 'Tabela de Precificação — Quanto Cobrar em Cada Receita',
+        tag: 'Бонус 2',
+        title: 'Умен списък за пазаруване — как да спестиш пари',
         description:
-          'Saiba exatamente quanto cobrar para lucrar de verdade em cada drink que vender.',
-        alt: 'Tabela de Precificação dos drinks',
+          'Разбери какви точно съставки да купиш, за да правиш топ коктейли, без да изпразваш джоба си по скъпи барове.',
+        alt: 'Списък за пазаруване и калкулатор',
       },
       {
-        tag: 'Bônus 3',
-        title: '✅ Roteiro Pronto: Como Anunciar no WhatsApp e Fechar Vendas',
-        description: 'Scripts prontos para você copiar, colar e já começar a vender.',
-        alt: 'Roteiro de vendas pelo WhatsApp',
+        tag: 'Бонус 3',
+        title: '✅ Наръчник: Как да организираш перфектната коктейлна вечер',
+        description: 'Готови идеи и стъпки как да създадеш незабравимо преживяване и да изумиш гостите си.',
+        alt: 'Наръчник за домашно парти',
       },
       {
-        tag: 'Bônus 4',
-        title: 'Videoaula: Como Embalar e Apresentar para Vender Mais',
+        tag: 'Бонус 4',
+        title: 'Видео урок: Как да украсяваш и поднасяш като професионалист',
         description:
-          'Aprenda a deixar seus produtos irresistíveis e cobrar mais caro por isso.',
-        alt: 'Videoaula sobre embalagem e apresentação',
+          'Научи тайните на красивата презентация, която превръща обикновената напитка в 5-звезден шедьовър.',
+        alt: 'Видео урок за декорация на коктейли',
       },
     ],
   },
 
-  // ── 6. PREÇO ──────────────────────────────────────────────────────────────
+  // ── 6. ЦЕНИ ──────────────────────────────────────────────────────────────
   pricing: {
     sectionId: 'precos',
-    title: 'Escolha como quer começar hoje:',
+    title: 'Избери как искаш да започнеш днес:',
     complete: {
-      badge: '⭐ Mais Vendido',
-      title: 'Kit Completo +150 Receitas de Drinks',
-      descriptionLead: '+150 receitas de drinks na garrafa prontas para vender + todos os',
-      descriptionStrong: 'bônus exclusivos',
-      descriptionTail: 'para você faturar até R$3.000/mês.',
-      mockupAlt: 'Mockup do Kit 150 Receitas de Copão Gourmet',
-      includesLabel: '🎁 Inclui todos os bônus:',
+      badge: '⭐ Най-търсен',
+      title: 'Пълен Пакет: 150+ Рецепти за Коктейли',
+      descriptionLead: '150+ рецепти за невероятни домашни коктейли + всички',
+      descriptionStrong: 'ексклузивни бонуси,',
+      descriptionTail: 'за да станеш най-добрият домашен барман.',
+      mockupAlt: 'Мокъп на Пълния Пакет с 150 Рецепти',
+      includesLabel: '🎁 Включва всички бонуси:',
       items: [
-        '+150 receitas de drinks gourmet',
-        'Lista de fornecedores baratos para garrefinhas',
-        'Tabela de precificação — todos os drinks',
-        'Roteiro de vendas pelo WhatsApp',
-        'Videoaula: como embalar e vender mais',
+        '150+ рецепти за премиум коктейли',
+        'Списък с евтини алтернативи на скъпите алкохоли',
+        'Наръчник за умно пазаруване на съставки',
+        'Гайд за перфектното домашно парти',
+        'Видео урок за професионална декорация',
       ],
-      strikePrice: 'De R$59,90',
-      price: 'R$24,90',
-      priceNote: 'acesso imediato',
-      ctaLabel: '🛒 QUERO O KIT COMPLETO',
-      footer: '✅ Acesso imediato · E-mail + WhatsApp · Garantia de 7 dias',
+      strikePrice: 'От 29.90 €',
+      price: '7.90 €',
+      priceNote: 'незабавен достъп',
+      ctaLabel: '🛒 ИСКАМ ПЪЛНИЯ ПАКЕТ',
+      footer: '✅ Незабавен достъп · Имейл + WhatsApp · 14 дни гаранция',
     },
   },
 
-  // ── 7. GARANTIA ───────────────────────────────────────────────────────────
+  // ── 7. ГАРАНЦИЯ ───────────────────────────────────────────────────────────
   guarantee: {
     icon: '🛡️',
-    title: 'Garantia de 7 dias',
+    title: '14 дни пълна гаранция',
     description:
-      'Se por qualquer motivo você não gostar, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.',
+      'Ако по някаква причина не останеш очарован, ще ти върнем парите до стотинка. Без въпроси, без излишни нерви.',
   },
 
-  // ── 8. FAQ ────────────────────────────────────────────────────────────────
+  // ── 8. ЧЗВ (Често задавани въпроси) ────────────────────────────────────────────────
   faq: {
-    title: 'Dúvidas',
-    titleHighlight: 'frequentes:',
+    title: 'Често задавани',
+    titleHighlight: 'въпроси:',
     items: [
       {
-        q: 'Preciso saber cozinhar para comprar?',
-        a: 'Não! As receitas são simples e qualquer pessoa consegue fazer, mesmo sem experiência na cozinha.',
+        q: 'Трябва ли да имам опит, за да ги направя?',
+        a: 'Твърдо не! Рецептите са обяснени просто и всеки може да ги приготви, дори никога досега да не е бъркал коктейл.',
       },
       {
-        q: 'Preciso de equipamentos caros ou cozinha profissional?',
-        a: 'Não precisa. Tudo pode ser feito em casa com utensílios simples que você provavelmente já tem.',
+        q: 'Нуждая ли се от скъпи шейкъри и професионални уреди?',
+        a: 'Няма нужда. Всичко може да се направи вкъщи с обикновени прибори, които вече имаш в кухнята.',
       },
       {
-        q: 'Onde vou vender os drinks?',
-        a: 'Você pode vender no WhatsApp, nas redes sociais, em festas, por delivery ou até na rua. O bônus 3 te ensina exatamente como fazer isso.',
+        q: 'За какви поводи са подходящи тези коктейли?',
+        a: 'За всичко! От разпускане след тежък работен ден, през романтична вечеря, до лудо домашно парти или събиране на вилата.',
       },
       {
-        q: 'Quanto posso cobrar por cada garrafa?',
-        a: 'Com a tabela de precificação incluída, você vai saber exatamente quanto cobrar para ter uma margem de lucro alta em cada venda.',
+        q: 'Скъпи ли са съставките?',
+        a: 'Не. С нашия умен списък за пазаруване ще научиш как да постигаш премиум вкус с достъпни продукти от близкия супермаркет.',
       },
       {
-        q: 'Como recebo após a compra?',
-        a: 'O acesso é imediato! Você recebe no e-mail e no WhatsApp assim que o pagamento for confirmado.',
+        q: 'Как ще получа достъп след покупката?',
+        a: 'Достъпът е незабавен! Щом плащането мине, получаваш всичко директно на имейла и по WhatsApp.',
       },
       {
-        q: 'Tenho garantia se não gostar?',
-        a: 'Sim! Você tem 7 dias de garantia total. Se não gostar por qualquer motivo, devolvemos 100% do valor pago.',
+        q: 'Има ли гаранция, ако не ми харесат?',
+        a: 'Разбира се! Имаш цели 14 дни пълна гаранция. Ако не си доволен, връщаме ти парите на 100%.',
       },
     ],
   },
 
-  // ── 9. URGÊNCIA ──────────────────────────────────────────────────────────
+  // ── 9. СПЕШНОСТ ──────────────────────────────────────────────────────────
   urgency: {
-    text: '⏰ Não fique esperando — cada dia sem vender é dinheiro perdido!',
+    text: '⏰ Не отлагай — уикендът наближава, а с него и поредната скучна вечер. Промени го още сега!',
   },
 
-  // ── 10. CTA FINAL ─────────────────────────────────────────────────────────
+  // ── 10. ФИНАЛЕН CTA ─────────────────────────────────────────────────────────
   finalCta: {
-    ctaLabel: '🍹 QUERO ACESSO ÀS 150 RECEITAS AGORA',
-    subText: '🔒 Acesso imediato • Garantia de 7 dias • Pagamento seguro',
+    ctaLabel: '🍹 ИСКАМ ДОСТЪП ДО 150-ТЕ РЕЦЕПТИ СЕГА',
+    subText: '🔒 Незабавен достъп • 14 дни гаранция • Сигурно плащане',
   },
 
-  // ── 11. SEGURIDAD (badges) ────────────────────────────────────────────────
+  // ── 11. СИГУРНОСТ (badges) ────────────────────────────────────────────────
   security: {
     items: [
-      { icon: '🔒', label: 'SSL Seguro' },
-      { icon: '💳', label: 'Pagamento Protegido' },
-      { icon: '📲', label: 'Acesso Imediato' },
+      { icon: '🔒', label: 'SSL Защита' },
+      { icon: '💳', label: 'Сигурно плащане' },
+      { icon: '📲', label: 'Незабавен достъп' },
     ],
   },
 
   // ── 12. FOOTER ────────────────────────────────────────────────────────────
   footer: {
-    text: '© 2026 · MUNDO DOS DRINKS · Todos os direitos reservados',
+    text: '© 2026 · СВЕТЪТ НА КОКТЕЙЛИТЕ · Всички права запазени',
   },
 
-  // ── A11Y / texto auxiliar (no visible "directamente" pero usado en aria) ──
+  // ── A11Y / помощен текст ──
   a11y: {
-    skipToContent: 'Ir para o conteúdo principal',
+    skipToContent: 'Към основното съдържание',
   },
 };
